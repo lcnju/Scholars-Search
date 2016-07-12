@@ -1,8 +1,9 @@
 {
     "name": "scholars search",
     "description": "在谷歌学术或百度学术中批量搜索，返回第一条结果的引用",
-    "version": "0.2",
+    "version": "0.3",
     "manifest_version": 2,
+    "update_url": "https://github.com/lcnju/Scholars-Search/raw/master/updates.xml",
     "content_scripts": [
         {
             "matches": [
