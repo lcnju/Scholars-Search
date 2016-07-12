@@ -1,0 +1,42 @@
+{
+    "name": "scholars search",
+    "description": "在谷歌学术或百度学术中批量搜索，返回第一条结果的引用",
+    "version": "0.2",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://scholar.google.com/*",
+                "http://scholar.google.com/*"
+            ],
+            "css": [
+                "bootstrap/css/bootstrap.min.css",
+                "mystyles.css"
+            ],
+            "js": [
+                "jquery.min.js",
+                "bootstrap/js/bootstrap.min.js",
+                "google.js",
+                "myscript.js"
+            ]
+        },
+        {
+            "matches": [
+                "http://xueshu.baidu.com/*"
+            ],
+            "css": [
+                "bootstrap/css/bootstrap.min.css",
+                "mystyles.css"
+            ],
+            "js": [
+                "jquery.min.js",
+                "bootstrap/js/bootstrap.min.js",
+                "baidu.js",
+                "myscript.js"
+            ]
+        }
+    ],
+    "icons": {
+        "128": "calculator-128.png"
+    }
+}
